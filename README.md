@@ -1,4 +1,5 @@
-# community-admin
+# SneakerFamily-Front-PC
+sneaker饭米粒PC站
 
 ## Project setup
 ```
