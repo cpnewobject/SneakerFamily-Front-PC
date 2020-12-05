@@ -6,13 +6,11 @@
           <li>
             <router-link :to="{ name: 'login' }">登录</router-link>
           </li>
-          <li class="layui-this">找回密码<!--重置密码--></li>
+          <li class="layui-this">找回密码
+            <!--重置密码-->
+          </li>
         </ul>
-        <div
-          class="layui-form layui-tab-content"
-          id="LAY_ucm"
-          style="padding: 20px 0;"
-        >
+        <div class="layui-form layui-tab-content" id="LAY_ucm" style="padding: 20px 0;">
           <div class="layui-tab-item layui-show">
             <!-- 重置密码 -->
             <!--
@@ -56,15 +54,7 @@
                 <div class="layui-form-item">
                   <label for="L_email" class="layui-form-label">邮箱</label>
                   <div class="layui-input-inline">
-                    <input
-                      type="text"
-                      name="username"
-                      v-model="username"
-                      v-validate="'required|email'"
-                      placeholder="请输入用户名"
-                      autocomplete="off"
-                      class="layui-input"
-                    />
+                    <input type="text" name="username" v-model="username" v-validate="'required|email'" placeholder="请输入用户名" autocomplete="off" class="layui-input" />
                   </div>
                 </div>
                 <div class="error-item">
@@ -73,19 +63,9 @@
                   }}</span>
                 </div>
                 <div class="layui-form-item">
-                  <label for="L_vercode" class="layui-form-label"
-                    >验证码</label
-                  >
+                  <label for="L_vercode" class="layui-form-label">验证码</label>
                   <div class="layui-input-inline">
-                    <input
-                      type="text"
-                      name="code"
-                      v-model="code"
-                      v-validate="'required|length:4'"
-                      placeholder="请输入验证码"
-                      autocomplete="off"
-                      class="layui-input"
-                    />
+                    <input type="text" name="code" v-model="code" v-validate="'required|length:4'" placeholder="请输入验证码" autocomplete="off" class="layui-input" />
                   </div>
                   <div>
                     <span class="svg" v-html="svg" @click="_getCaptcha()"></span>
@@ -156,7 +136,7 @@ export default {
   top: -2px;
   cursor: pointer;
 }
-.error-item{
+.error-item {
   position: relative;
   top: -10px;
 }
